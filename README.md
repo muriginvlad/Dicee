@@ -3,7 +3,7 @@
 Screenshots /  Скриншоты
 -----------------------------------
 
-| <img height="500" src="https://github.com/muriginvlad/Sex_cubes/raw/master/Screenshots/Screenshot_2.png" /> | <img height="500" src="https://github.com/muriginvlad/Sex_cubes/raw/master/Screenshots/Screenshot_1.png.png" /> |
+| <img height="500" src="https://github.com/muriginvlad/Dicee/raw/master/Screenshots/Screenshot_1.png" /> | <img height="500" src="https://github.com/muriginvlad/Dicee/raw/master/Screenshots/Screenshot_2.png" /> |
 |------------|-------------| 
 | <p align="center">Загрузка.</p>|<p align="center">Основной экран.</p>|
 
