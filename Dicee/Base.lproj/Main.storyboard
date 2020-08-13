@@ -73,7 +73,7 @@
                                             <constraint firstAttribute="height" constant="71" id="bcd-sU-adT"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
-                                        <state key="normal" title="ROLL">
+                                        <state key="normal" title="Кинуть">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -109,6 +109,7 @@
                     <connections>
                         <outlet property="diceImageView1" destination="D5o-05-FhE" id="pNJ-Ws-gAy"/>
                         <outlet property="diceImageView2" destination="LND-an-vjw" id="tHh-Of-aka"/>
+                        <outlet property="rollButton" destination="YuA-I0-TGO" id="FQq-aU-MVU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

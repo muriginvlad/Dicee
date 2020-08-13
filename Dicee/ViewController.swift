@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     var rendomDiceeIndex1 = 0
     var rendomDiceeIndex2 = 0
     
+    @IBOutlet var rollButton: UIButton!
+    
     @IBOutlet weak var diceImageView1: UIImageView!
     @IBOutlet weak var diceImageView2: UIImageView!
     
@@ -23,11 +25,20 @@ class ViewController: UIViewController {
         
         randomDiceImages()
         
+        rollButton.layer.cornerRadius = rollButton.frame.size.height / 4
+        
     }
 
     @IBAction func rollButtonPressed(_ sender: UIButton) {
         
-        randomDiceImages()
+        rotateImage(image: diceImageView1)
+        rotateImage(image: diceImageView2)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
+            self.randomDiceImages()
+        })
+        
+        
         
     }
     
@@ -44,6 +55,17 @@ class ViewController: UIViewController {
         
         diceImageView1.image = UIImage(named: diceeArray[rendomDiceeIndex1])
         diceImageView2.image = UIImage(named: diceeArray[rendomDiceeIndex2])
+    }
+    
+    func rotateImage(image: UIImageView) {
+        UIView.animate(withDuration: 1, animations: {
+            image.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+            image.transform = CGAffineTransform.identity
+            image.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+            image.transform = CGAffineTransform.identity
+        }) { (completed) in
+            //  rotateImage(image: image)
+        }
     }
     
 }
